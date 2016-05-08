@@ -6,6 +6,7 @@ $(document).ready(function () {
       var currentIndex = 0;
       appendDOM();
 
+//index selector function
       $('.selector').on('click', '.person', function () {
         currentIndex = Number($(this).attr('id'));
         $('.selector').find('.selected').removeClass('selected');
@@ -13,8 +14,8 @@ $(document).ready(function () {
         appendDOM();
       });
 
+//next and prev functions
       $('.container').on('click', '#next', function () {
-        console.log('you can do this');
         currentIndex++;
         if (currentIndex < 0) {
           currentIndex = data.mu.length - 1;
@@ -29,7 +30,6 @@ $(document).ready(function () {
       });
 
       $('.container').on('click', '#prev', function () {
-        console.log('you can do this');
         currentIndex--;
         if (currentIndex < 0) {
           currentIndex = data.mu.length - 1;
@@ -43,6 +43,7 @@ $(document).ready(function () {
 
       });
 
+//function to append selected shoutout to the DOM
       function appendDOM() {
         $('.ajax-data').fadeOut('slow', function () {
           $('.ajax-data').children().remove();
