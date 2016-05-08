@@ -1,0 +1,40 @@
+body {
+  font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+}
+
+header, .ajax-data, .selector, .container {
+  text-align: center;
+}
+
+.selector, .container {
+  margin: 3px;
+}
+
+.person, .navigation {
+  border: 1px solid black;
+  height: 30px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.navigation:hover {
+  opacity: 0.5;
+}
+
+.person {
+  width: 30px;
+}
+
+.person p, .navigation p {
+  margin: 0;
+}
+
+.navigation {
+  width: 60px;
+}
+
+.selected {
+  opacity: 0.50;
+}
